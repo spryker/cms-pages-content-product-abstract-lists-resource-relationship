@@ -9,7 +9,7 @@ namespace Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\P
 
 use Spryker\Glue\GlueApplication\Rest\Request\Data\RestRequestInterface;
 
-interface ContentProductAbstractListsByCmsPageReferenceResourceRelationshipExpanderInterface
+interface ContentProductAbstractListByCmsPageUuidResourceRelationshipExpanderInterface
 {
     /**
      * @param \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface[] $resources
