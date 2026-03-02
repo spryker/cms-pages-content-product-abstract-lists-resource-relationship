@@ -17,9 +17,6 @@ class ContentProductAbstractListByCmsPageUuidResourceRelationshipExpander implem
      */
     protected $contentProductAbstractListReader;
 
-    /**
-     * @param \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Processor\Reader\ContentProductAbstractListReaderInterface $contentProductAbstractListReader
-     */
     public function __construct(ContentProductAbstractListReaderInterface $contentProductAbstractListReader)
     {
         $this->contentProductAbstractListReader = $contentProductAbstractListReader;

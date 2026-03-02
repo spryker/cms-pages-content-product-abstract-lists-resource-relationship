@@ -18,9 +18,6 @@ use Spryker\Glue\Kernel\AbstractFactory;
 
 class CmsPagesContentProductAbstractListsResourceRelationshipFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Processor\Reader\ContentProductAbstractListReaderInterface
-     */
     public function createContentProductAbstractListReader(): ContentProductAbstractListReaderInterface
     {
         return new ContentProductAbstractListReader(
@@ -30,9 +27,6 @@ class CmsPagesContentProductAbstractListsResourceRelationshipFactory extends Abs
         );
     }
 
-    /**
-     * @return \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Processor\Expander\ContentProductAbstractListByCmsPageUuidResourceRelationshipExpanderInterface
-     */
     public function createContentProductAbstractListByCmsPageUuidResourceRelationshipExpander(): ContentProductAbstractListByCmsPageUuidResourceRelationshipExpanderInterface
     {
         return new ContentProductAbstractListByCmsPageUuidResourceRelationshipExpander(
@@ -40,25 +34,16 @@ class CmsPagesContentProductAbstractListsResourceRelationshipFactory extends Abs
         );
     }
 
-    /**
-     * @return \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\Client\CmsPagesContentProductAbstractListsResourceRelationshipToCmsStorageClientInterface
-     */
     public function getCmsStorageClient(): CmsPagesContentProductAbstractListsResourceRelationshipToCmsStorageClientInterface
     {
         return $this->getProvidedDependency(CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider::CLIENT_CMS_STORAGE);
     }
 
-    /**
-     * @return \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\Client\CmsPagesContentProductAbstractListsResourceRelationshipToStoreClientInterface
-     */
     public function getStoreClient(): CmsPagesContentProductAbstractListsResourceRelationshipToStoreClientInterface
     {
         return $this->getProvidedDependency(CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider::CLIENT_STORE);
     }
 
-    /**
-     * @return \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\RestApiResource\CmsPagesContentProductAbstractListsResourceRelationshipToContentProductAbstractListsRestApiResourceInterface
-     */
     public function getContentProductAbstractListsRestApiResource(): CmsPagesContentProductAbstractListsResourceRelationshipToContentProductAbstractListsRestApiResourceInterface
     {
         return $this->getProvidedDependency(CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider::RESOURCE_CONTENT_PRODUCT_ABSTRACT_LISTS_REST_API);

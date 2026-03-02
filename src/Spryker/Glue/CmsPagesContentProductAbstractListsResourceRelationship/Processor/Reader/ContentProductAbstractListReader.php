@@ -30,11 +30,6 @@ class ContentProductAbstractListReader implements ContentProductAbstractListRead
      */
     protected $contentProductAbstractListsRestApiResource;
 
-    /**
-     * @param \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\Client\CmsPagesContentProductAbstractListsResourceRelationshipToCmsStorageClientInterface $cmsStorageClient
-     * @param \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\Client\CmsPagesContentProductAbstractListsResourceRelationshipToStoreClientInterface $storeClient
-     * @param \Spryker\Glue\CmsPagesContentProductAbstractListsResourceRelationship\Dependency\RestApiResource\CmsPagesContentProductAbstractListsResourceRelationshipToContentProductAbstractListsRestApiResourceInterface $contentProductAbstractListsRestApiResource
-     */
     public function __construct(
         CmsPagesContentProductAbstractListsResourceRelationshipToCmsStorageClientInterface $cmsStorageClient,
         CmsPagesContentProductAbstractListsResourceRelationshipToStoreClientInterface $storeClient,

@@ -33,11 +33,6 @@ class CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider 
      */
     public const RESOURCE_CONTENT_PRODUCT_ABSTRACT_LISTS_REST_API = 'RESOURCE_CONTENT_PRODUCT_ABSTRACT_LISTS_REST_API';
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     public function provideDependencies(Container $container): Container
     {
         $container = parent::provideDependencies($container);
@@ -49,11 +44,6 @@ class CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider 
         return $container;
     }
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     protected function addCmsStorageClient(Container $container): Container
     {
         $container->set(static::CLIENT_CMS_STORAGE, function (Container $container) {
@@ -65,11 +55,6 @@ class CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider 
         return $container;
     }
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     protected function addStoreClient(Container $container): Container
     {
         $container->set(static::CLIENT_STORE, function (Container $container) {
@@ -81,11 +66,6 @@ class CmsPagesContentProductAbstractListsResourceRelationshipDependencyProvider 
         return $container;
     }
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     protected function addContentProductAbstractListsRestApiResource(Container $container): Container
     {
         $container->set(static::RESOURCE_CONTENT_PRODUCT_ABSTRACT_LISTS_REST_API, function (Container $container) {
