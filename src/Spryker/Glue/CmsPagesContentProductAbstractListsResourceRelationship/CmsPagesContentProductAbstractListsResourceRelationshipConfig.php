@@ -12,6 +12,8 @@ use Spryker\Glue\Kernel\AbstractBundleConfig;
 class CmsPagesContentProductAbstractListsResourceRelationshipConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * @uses \Spryker\Shared\ContentProduct\ContentProductConfig::TWIG_FUNCTION_NAME
      *
      * @var string
@@ -19,6 +21,8 @@ class CmsPagesContentProductAbstractListsResourceRelationshipConfig extends Abst
     public const TWIG_FUNCTION_NAME = 'content_product_abstract_list';
 
     /**
+     * @api
+     *
      * @uses \Spryker\Glue\ContentProductAbstractListsRestApi\ContentProductAbstractListsRestApiConfig::RESOURCE_CONTENT_PRODUCT_ABSTRACT_LISTS
      *
      * @var string
